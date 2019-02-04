@@ -135,9 +135,3 @@
   50% {right:60%}
   100% {right:20%;}
 }
-
-.ex-13-button:hover .ex-13-top-white {
-  animation-name: boolean2;
-  animation-duration: 2s;
-  animation-timing-function: linear
-}
