@@ -1,0 +1,143 @@
+.ex-1-square {
+  transition: background-color 5s ease;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.ex-2-square {
+  transition: width 2s ease;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+.ex-3-square {
+  transition: border-radius 2s ease;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+.ex-4-square {
+  transition: background-color 2s ease;
+}
+
+.ex-4-square:hover {
+  background-color: transparent;
+}
+
+.ex-5-square {
+  transition: all 2s ease;
+}
+
+.ex-5-square:hover {
+  width: 140px;
+  height: 140px;
+}
+
+.ex-5-square:active {
+  width: 30px;
+  height: 30px;
+}
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.ex-7-img {
+  transition: filter 3s ease;
+}
+
+.ex-7-img:hover {
+  cursor: pointer;
+  filter: sepia(1) saturate(0.1);
+}
+
+.ex-8-img {
+  transition: all 3s ease;
+}
+
+.ex-8-img:hover {
+  cursor: pointer;
+  filter: sepia(1) saturate(0.1);
+  border-radius: 30px;
+}
+
+.ex-9-img {
+  transition: all 3s ease;
+}
+
+.ex-9-img:hover {
+  cursor: pointer;
+  filter: sepia(1) saturate(0.1);
+  border-radius: 30px;
+  width: 500px;
+}
+
+.ex-10-icon {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.ex-11-icon:hover {
+  animation-name: spin2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes spin2 {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(10deg);}
+  20% {transform: rotate(30deg);}
+  30% {transform: rotate(50deg);}
+  40% {transform: rotate(100deg);}
+  50% {transform: rotate(150deg);}
+  60% {transform: rotate(200deg);}
+  70% {transform: rotate(250deg);}
+  80% {transform: rotate(300deg);}
+  90% {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: boolean1;
+  animation-duration: 2s;
+  animation-timing-function: linear
+}
+
+@keyframes boolean1 {
+  0% {left:10%;}
+  50% {left:60%;}
+  100% {left:10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: boolean;
+  animation-duration: 2s;
+  animation-timing-function: linear
+}
+
+@keyframes boolean {
+  0% {right:20%;}
+  50% {right:60%}
+  100% {right:20%;}
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: boolean2;
+  animation-duration: 2s;
+  animation-timing-function: linear
+}
